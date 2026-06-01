@@ -1,45 +1,48 @@
-# Ex.No:3(B) STRING BUFFER IN JAVA
+# Ex.No:3(C)    STRING BUILDER IN JAVA
 
 ## AIM:
-To develop a java program use append() method concatenates the given argument with this String and use stringbuffer class.
-
+To Create a java program to convert string into a character array and display it in a specific format.
 ## ALGORITHM :
-1.	Start the program.
-2.	Import `Scanner` and define class `concat`
-3.	In `main`:
--	a) Create `Scanner` object `sc`
--	b) Read two strings `a` and `b` from user input
-4.	Create a `StringBuffer` object `sb` initialized with string `a`
-5.	Append a space and string `b` to `sb`
-6.	Print the concatenated result from `sb`
-7.	End
 
-
-
-
-
-
+1. Initialize `Scanner` and read a string input from the user.
+2. Convert the string to a character array using `toCharArray()`.
+3. Determine the length of the character array.
+4. Loop through the array, printing each character with a comma separator.
+5. Display the character array in the format `[char1, char2, ..., charN]`.
 
 ## PROGRAM:
  ```
-/*
-Program to implement a String Buffer using Java
-Developed by: 
-RegisterNumber:  
-*/
+Program to implement a class & objects using Java
+Developed by: MUKESH KUMAR  S
+RegisterNumber: 212223240099
+
+import java.util.*;
+public class Demo{
+    public static void main(String args[]){
+        Scanner sc = new Scanner(System.in);
+        String str1 = sc.nextLine();
+        char[] arr = str1.toCharArray();
+        int n = arr.length;
+        System.out.print("[");
+        for(int i =0;i<n;i++){
+            System.out.print(arr[i]);
+            if (i < n - 1) {
+                System.out.print(", ");
+            }
+        }
+        System.out.print("]");
+    }
+}
 ```
-
-## Sourcecode.java:
-
-
-
-
-
 
 
 ## OUTPUT:
 
+![Screenshot 2025-05-09 135323](https://github.com/user-attachments/assets/fbe70b98-607c-43dd-8a93-3a0fac08e7dd)
 
 
 ## RESULT:
-Thus the java program use append() method concatenates the given argument with this String and use stringbuffer class was executed successfully.
+Thus the java program to convert string into a character array and display it in a specific format executed successfully.
+
+
+
